@@ -99,4 +99,26 @@ function updateSliderPosition(divContainer, sliders, index) {
       }
     });
   });
+
+  document.addEventListener("fullscreenchange", verificarTelaCheia);
+document.addEventListener("webkitfullscreenchange", verificarTelaCheia);
+document.addEventListener("mozfullscreenchange", verificarTelaCheia);
+document.addEventListener("MSFullscreenChange", verificarTelaCheia);
+
+function verificarTelaCheia() {
+    if (document.fullscreenElement || document.webkitFullscreenElement || 
+        document.mozFullScreenElement || document.msFullscreenElement) {
+        
+        console.log("Tela cheia ativada!");
+
+        // Tenta travar a orientação para horizontal
+        if (screen.orientation && screen.orientation.lock) {
+            screen.orientation.lock("landscape").catch((error) => {
+                console.log("Não foi possível bloquear a orientação: ", error);
+            });
+        }
+    } else {
+        console.log("Tela cheia desativada!");
+    }
+}
   
