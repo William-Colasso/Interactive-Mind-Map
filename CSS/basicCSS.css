@@ -45,11 +45,28 @@ body{
 
 
 .mindMapContainer{
-    width: 80%;
-    height: 80%;
+    
     background-color: whitesmoke;
     display: flex;
     flex-direction: row;
-    border-radius: 15px;
+    overflow: hidden; /* Limita a exibição dos elementos filhos ao tamanho do container */
+    align-items: center;
+    height: 65%;
+    width: 85%;
+    border-radius: 10px;
+   z-index: 1;
 }
 
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    height: 100%;
+    color: whitesmoke;
+    margin: auto;
+    transition: 1.5s ease-in-out;
+    z-index: 0;
+  }
