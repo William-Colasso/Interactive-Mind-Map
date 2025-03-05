@@ -116,3 +116,34 @@ body{
   #Autores.active i{
     color: whitesmoke;
   }
+
+  @media screen and (max-width: 768px) {
+    .upperBar {
+        position: fixed;
+        top: 15px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .upperButton {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .mindMapContainer {
+        width: 90%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .slider {
+        min-width: 100%;
+        height: auto;
+    }
+}
