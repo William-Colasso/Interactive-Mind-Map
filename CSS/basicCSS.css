@@ -3,17 +3,16 @@ body{
     height: 100vh;
     padding: 0;
     margin: 0;
+    background: linear-gradient(to bottom,#8D98A6 12%, #D2D6D9);
     overflow: hidden;
-}
-
-html{
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+*{
+    font-family:"Montserrat";
 }
 
 .containerMindMap{
@@ -21,3 +20,36 @@ html{
     height: 100%;
     background-color: #000000;
 }
+
+
+.upperBar{
+    height: 12%;
+    width: 100%;
+    background-color: #8D98A6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.upperButton{
+    width: 20%;
+    height: 80%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 5px 10px 2px 2px;
+
+
+}
+
+
+.mindMapContainer{
+    width: 80%;
+    height: 80%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    border-radius: 15px;
+}
+
