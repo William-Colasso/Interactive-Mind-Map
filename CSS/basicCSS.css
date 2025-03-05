@@ -30,7 +30,8 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-
+    align-content: center;
+    justify-items: center;
 
 }
 
@@ -46,13 +47,13 @@ body{
 
 .mindMapContainer{
     
-    background-color: whitesmoke;
+    background-color: #DBE1E6;
     display: flex;
     flex-direction: row;
     overflow: hidden; /* Limita a exibição dos elementos filhos ao tamanho do container */
     align-items: center;
-    height: 85%;
-    width: 85%;
+    height: 90%;
+    width: 70%;
     border-radius: 10px;
    z-index: 1;
 }
@@ -65,7 +66,7 @@ body{
     justify-content: center;
     min-width: 100%;
     height: 100%;
-    color: whitesmoke;
+    color: #DBE1E6;
     margin: auto;
     transition: 1.5s ease-in-out;
     z-index: 0;

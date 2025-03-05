@@ -17,18 +17,18 @@ function updateSliderPosition(divContainer, sliders, index) {
    * @returns {Object} - Um objeto com funções para manipular o slider.
    */
   function createSlide(divContainer) {
-    const back = document.getElementById("backButtonSlide");
+    /*const back = document.getElementById("backButtonSlide");
     const next = document.getElementById("nextButtonSlide");
     if (!back || !next) {
       console.error("Botões de navegação do slider não encontrados.");
       return;
-    }
+    }*/
   
     const sliders = Array.from(divContainer.querySelectorAll(".slider"));
     let indexSlide = 0; // Variável encapsulada dentro da função createSlide
   
     const update = () => updateSliderPosition(divContainer, sliders, indexSlide);
-  
+    /*
     next.addEventListener("click", () => {
       if (indexSlide < sliders.length - 1) {
         indexSlide++;
@@ -41,7 +41,7 @@ function updateSliderPosition(divContainer, sliders, index) {
         indexSlide--;
         update();
       }
-    });
+    });*/
   
     window.addEventListener("resize", update);
   
@@ -76,4 +76,15 @@ function updateSliderPosition(divContainer, sliders, index) {
   let containerMindMap = document.getElementById("mindMapContainer")
   var controllerSlider = createSlide(containerMindMap)
 
-  let botaoVoltar = document.getElementById("")
+  let botaoFolha = document.getElementById("Folha")
+  botaoFolha.addEventListener("click", ()=> {
+    controllerSlider.goToSlide(0)
+  })
+  let botaoLean = document.getElementById("Lean")
+  botaoLean.addEventListener("click", ()=> {
+    controllerSlider.goToSlide(1)
+  })
+  let botaoAutores = document.getElementById("Autores")
+  botaoAutores.addEventListener("click", ()=> {
+    controllerSlider.goToSlide(2)
+  })
