@@ -2,33 +2,41 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapa mental Ficha de verificação e Lean</title>
-    <link rel="stylesheet" href="CSS/basicCSS.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa mental Ficha de verificação e Lean</title>
+  <link rel="stylesheet" href="CSS/basicCSS.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-    <div class="upperBar">
-        <button class="upperButton">Folha de verificação</button>
-        <button class="upperButton">Lean</button>
-        <button class="upperButton">Autores</button>
-        
-    </div>
+  <div class="upperBar">
+    <button class="upperButton" id="backButtonSlide">Folha de verificação</button>
+    <button class="upperButton" id ="Lean">Lean</button>
+    <button class="upperButton" id="nextButtonSlide">Autores</button>
 
-    <div class="mindMapContainer">
-        <div class="slider" style="background-color: black; width: 100%; height: 100%">
+  </div>
 
-        </div>
-        <div class="slider" style="background-color: #ccc; width: 100%; height: 100%;">
-  
-        </div>
+  <div class="mindMapContainer" id="mindMapContainer">
+    <div class="slider" >
+      <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+        <iframe loading="lazy"
+          style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+          src="https://www.canva.com/design/DAGg4IhvMDg/s20Dc_O0hjJ5j6dzCMMNxg/view?embed"
+          allowfullscreen="allowfullscreen" allow="fullscreen">
+        </iframe>
+      </div>
     </div>
+    <div class="slider" style="background-color: #ccc; width: 100%; height: 100%;">
+
+    </div>
+  </div>
 </body>
 <script src="js/basicJs.js"></script>
-<script src="js/canvasJS.js"></script>
 
 </html>

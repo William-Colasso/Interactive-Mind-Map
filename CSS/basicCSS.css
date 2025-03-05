@@ -23,7 +23,7 @@ body{
 
 
 .upperBar{
-    height: 12%;
+    height: 8%;
     width: 100%;
     background-color: #8D98A6;
     display: flex;
@@ -51,7 +51,7 @@ body{
     flex-direction: row;
     overflow: hidden; /* Limita a exibição dos elementos filhos ao tamanho do container */
     align-items: center;
-    height: 65%;
+    height: 85%;
     width: 85%;
     border-radius: 10px;
    z-index: 1;
