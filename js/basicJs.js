@@ -75,16 +75,28 @@ function updateSliderPosition(divContainer, sliders, index) {
 
   let containerMindMap = document.getElementById("mindMapContainer")
   var controllerSlider = createSlide(containerMindMap)
+  let botoes = document.querySelectorAll("#Folha, #Lean, #Autores");
 
-  let botaoFolha = document.getElementById("Folha")
-  botaoFolha.addEventListener("click", ()=> {
-    controllerSlider.goToSlide(0)
-  })
-  let botaoLean = document.getElementById("Lean")
-  botaoLean.addEventListener("click", ()=> {
-    controllerSlider.goToSlide(1)
-  })
-  let botaoAutores = document.getElementById("Autores")
-  botaoAutores.addEventListener("click", ()=> {
-    controllerSlider.goToSlide(2)
-  })
+  botoes.forEach(botao => {
+    botao.addEventListener("click", () => {
+      // Remove a classe "active" de todos os botões
+      botoes.forEach(btn => btn.classList.remove("active"));
+  
+      // Adiciona a classe "active" apenas ao botão clicado
+      botao.classList.add("active");
+  
+      // Alterna os slides de acordo com o botão clicado
+      switch (botao.id) {
+        case "Folha":
+          controllerSlider.goToSlide(0);
+          break;
+        case "Lean":
+          controllerSlider.goToSlide(1);
+          break;
+        case "Autores":
+          controllerSlider.goToSlide(2);
+          break;
+      }
+    });
+  });
+  
